@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1659825998 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1659824294 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\plusoumoins.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
