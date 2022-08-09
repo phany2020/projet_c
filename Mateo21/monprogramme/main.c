@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
+#include "header.h"
 
 int triple(int nombre)
 {
@@ -262,20 +264,140 @@ int main()
 //    printf("Rectangle de largeur 2.5 et hauteur 3.5. Aire = %f\n", aireRectangle(2.5, 3.5));
 //    printf("Rectangle de largeur 4.2 et hauteur 9.7. Aire = %f\n", aireRectangle(4.2, 9.7));
 
-    switch (menu())
+//    switch (menu())
+//    {
+//        case 1:
+//            printf("Vous avez pris le poulet\n");
+//            break;
+//        case 2:
+//            printf("Vous avez pris les concombres\n");
+//            break;
+//        case 3:
+//            printf("Vous avez pris l'escalope\n");
+//            break;
+//        case 4:
+//            printf("Vous avez pris la surprise du Chef. Vous etes un sacre aventurier dites donc !\n");
+//        break;
+//    }
+//
+//    int heures = 0, minutes = 90;
+//    decoupeMinutes(heures, minutes);
+//    printf("%d heures et %d minutes \n", heures, minutes);
+//
+//    int age = 10;
+//    printf("La variable age vaut : %d \n", age);
+//    printf("L'adresse de la variable age est : %p \n", &age);
+//
+//    int *pointeurSurAge = &age;
+//    printf("%d", *pointeurSurAge);
+
+//    int nombre = 5;
+//    triplePointeur(&nombre); // On envoie l'adresse de nombre à la fonction
+//    printf("%d \n", nombre); // On affiche la variable nombre. La fonction a directement modifié la valeur de la variable car elle connaissait son adresse
+//
+//    int heures = 0, minutes = 90;
+//    // On envoie l'adresse de heures et minutes
+//    decoupeMinutes(&heures, &minutes);
+//    // Cette fois, les valeurs ont été modifiées !
+//    printf("%d heures et %d minutes", heures, minutes);
+//
+//    int tableau[4], i = 0;
+//    tableau[0] = 10;
+//    tableau[1] = 23;
+//    tableau[2] = 505;
+//    tableau[3] = 8;
+//    for (i = 0 ; i < 4 ; i++)
+//    {
+//        printf("%d\n", tableau[i]);
+//    }
+
+//    int tableau[4], i = 0;
+//    // Initialisation du tableau
+//    for (i = 0 ; i < 4 ; i++)
+//    {
+//        tableau[i] = 0;
+//    }
+//    // Affichage de ses valeurs pour vérifier
+//    for (i = 0 ; i < 4 ; i++)
+//    {
+//        printf("%d\n", tableau[i]);
+//    }
+//
+//    int pableau[4] = {0, 0, 0, 0};
+//    for (i = 0 ; i < 4 ; i++)
+//    {
+//        printf("%d\n", pableau[i]);
+//    }
+
+
+
+//    int tableau[4] = {10, 15, 3};
+//    // On affiche le contenu du tableau
+//    affiche(tableau, 4);
+//    printf("\n La somme des elements du tableau donne %d", sommeTableau(tableau,4));
+//    printf("\n La moyenne des elements du tableau donne %f", moyenneTableau(tableau,4));
+//
+//    int copie_tab[4]={0};
+//    copie(tableau,copie_tab,4);
+//    maximumTableau(tableau, 4, 10);
+//    ordonnerTableau(tableau, 4);
+
+//    char lettre = 'A';
+//    printf("%d\n", lettre);
+//
+//    char chaine[6]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
+//    // Initialisation de la chaîne (on écrit les caractères un à un en mémoire)
+//    chaine[0] = 'S';
+//    chaine[1] = 'a';
+//    chaine[2] = 'l';
+//    chaine[3] = 'u';
+//    chaine[4] = 't';
+//    chaine[5] = '\0';
+//    // Affichage de la chaîne grâce au %s du printf
+//    printf("%s", chaine);
+
+//    char chaine[] = "Salut"; // La taille du tableau chaine est automatiquement calculée
+//    printf("%s", chaine);
+//
+//    char prenom[100];
+//    printf("\n Comment t'appelles-tu petit Zero ? ");
+//    scanf("%s", prenom);
+//    printf("Salut %s, je suis heureux de te rencontrer !", prenom);
+
+//    char chaine[] = "Salut";
+//    int longueurChaine = 0;
+//    // On récupère la longueur de la chaîne dans longueurChaine
+//    longueurChaine = strlen(chaine);
+//    // On affiche la longueur de la chaîne
+//    printf("La chaine %s fait %d caracteres de long", chaine, longueurChaine);
+
+//    char chaine[] = "Salut";
+//    int longueur = 0;
+//    longueur = longueurChaine(chaine);
+//    printf("La chaine %s fait %d caracteres de long", chaine, longueur);
+
+//    char chaine[] = "Texte", copie[100] = {0};
+//    strcpy(copie, chaine); // On copie "chaine" dans "copie"
+//    // Si tout s'est bien passé, la copie devrait être identique à chaine
+//    printf("chaine vaut : %s\n", chaine);
+//    printf("copie vaut : %s\n", copie);
+//
+//
+//    char chaine1[100] = "Salut ", chaine2[] = "Mateo21";
+//    strcat(chaine1, chaine2); // On concatène chaine2 dans chaine1
+//    // Si tout s'est bien passé, chaine1 vaut "Salut Mateo21"
+//    printf("chaine1 vaut : %s\n", chaine1);
+//    // chaine2 n'a pas changé :
+//    printf("chaine2 vaut toujours : %s\n", chaine2);
+
+    char chaine1[] = "Texte de test", chaine2[] = "Texte de test";
+    if (strcmp(chaine1, chaine2) == 0) // Si chaînes identiques
     {
-        case 1:
-            printf("Vous avez pris le poulet\n");
-            break;
-        case 2:
-            printf("Vous avez pris les concombres\n");
-            break;
-        case 3:
-            printf("Vous avez pris l'escalope\n");
-            break;
-        case 4:
-            printf("Vous avez pris la surprise du Chef. Vous etes un sacre aventurier dites donc !\n");
-        break;
+        printf("Les chaines sont identiques\n");
+    }
+    else
+    {
+        printf("Les chaines sont differentes\n");
     }
 
     return 0;
