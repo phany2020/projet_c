@@ -3,6 +3,14 @@
 #include <math.h>
 #include <string.h>
 #include "header.h"
+#define coucou() printf("coucou");
+#define RACONTER_SA_VIE() printf("Coucou, je m'appelle Brice\n"); \
+printf("J'habite a Nice\n"); \
+printf("J'aime la glisse\n");
+#define MAJEUR(age) if (age >= 18) \
+printf("Vous etes majeur\n");\
+else printf("Vous etes mineur\n");
+
 
 int triple(int nombre)
 {
@@ -52,6 +60,7 @@ int menu()
     }
     return choix;
 }
+
 
 
 
@@ -390,15 +399,71 @@ int main()
 //    // chaine2 n'a pas changé :
 //    printf("chaine2 vaut toujours : %s\n", chaine2);
 
-    char chaine1[] = "Texte de test", chaine2[] = "Texte de test";
-    if (strcmp(chaine1, chaine2) == 0) // Si chaînes identiques
-    {
-        printf("Les chaines sont identiques\n");
-    }
-    else
-    {
-        printf("Les chaines sont differentes\n");
-    }
+//    char chaine1[] = "Texte de test", chaine2[] = "Texte de test";
+//    if (strcmp(chaine1, chaine2) == 0) // Si chaînes identiques
+//    {
+//        printf("Les chaines sont identiques\n");
+//    }
+//    else
+//    {
+//        printf("Les chaines sont differentes\n");
+//    }
+
+//    char chaine[] = "Texte de test", *suiteChaine = NULL;
+//    suiteChaine = strrchr(chaine, 'd');
+//    if (suiteChaine != NULL) // Si on a trouvé quelque chose
+//    {
+//        printf("Voici la fin de la chaine a partir du premier d : %s", suiteChaine);
+//    }
+//
+//    char *suiteChaine;
+//    // On cherche la première occurrence de x, d ou s dans "Texte de test"
+//    suiteChaine = strpbrk("Texte de test", "xds");
+//    if (suiteChaine != NULL)
+//    {
+//        printf("Voici la fin de la chaine a partir du premier des caracteres trouves : %s", suiteChaine);
+//    }
+
+//    char *suiteChaine;
+//    // On cherche la première occurrence de "test" dans "Texte de test" :
+//    suiteChaine = strstr("Texte de test", "test");
+//    if (suiteChaine != NULL)
+//    {
+//        printf("Premiere occurrence de test dans Texte de test : %s\n", suiteChaine);
+//    }
+
+//    char chaine[100];
+//    int age = 15;
+//    // On écrit "Tu as 15 ans" dans chaine
+//    sprintf(chaine, "Tu as %d ans !", age);
+//    // On affiche chaine pour vérifier qu'elle contient bien cela :
+//    printf("%s", chaine);
+//
+//    coucou()
+//    RACONTER_SA_VIE()
+//    MAJEUR(12)
+
+
+//    Coordonnees point;
+//    point.x = 10;
+//    point.y = 20;
+//
+//    Personne utilisateur;
+//
+//    printf("Quel est votre nom ? ");
+//    scanf("%s", utilisateur.nom);
+//    printf("Votre prenom ? ");
+//    scanf("%s", utilisateur.prenom);
+//    printf("Vous vous appelez %s %s", utilisateur.prenom, utilisateur.nom);
+
+
+   // essai_joueur();
+
+    Coordonnees monPoint;
+    initialiserCoordonnees(&monPoint);
+
+//    Volume musique = MOYEN;
+//    printf("%s", musique);
 
     return 0;
 }

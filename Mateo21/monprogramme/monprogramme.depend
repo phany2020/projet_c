@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1660009205 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\main.c
+1660689659 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\main.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
+	<string.h>
 	"header.h"
 
 1659824294 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\plusoumoins.c
@@ -14,9 +15,14 @@
 	<stdio.h>
 	<stdlib.h>
 
-1660008965 c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\header.h
+1660686496 c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\header.h
 
 1660009600 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\tableau.c
 
 1660064066 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\char.c
+
+1660690587 source:c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\struct.c
+	"struct.h"
+
+1660690877 c:\users\stéphanie-claude\desktop\projects\mateo21\monprogramme\struct.h
 

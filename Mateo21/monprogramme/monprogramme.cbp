@@ -31,7 +31,24 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="PlusOuMoins.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="char.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="header.h" />
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pointeur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="struct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="struct.h" />
+		<Unit filename="tableau.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
