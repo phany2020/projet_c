@@ -31,6 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+<<<<<<< HEAD
 		<Unit filename="PlusOuMoins.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,6 +52,11 @@
 		<Unit filename="tableau.c">
 			<Option compilerVar="CC" />
 		</Unit>
+=======
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+>>>>>>> efd4969ffad2478dcf4d4f6478b118eb34ce896e
 		<Extensions>
 			<code_completion />
 			<envvars />
